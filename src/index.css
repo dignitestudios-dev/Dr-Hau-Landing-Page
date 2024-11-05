@@ -1,0 +1,21 @@
+/* src/App.css or src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add your custom font-face definition (if not done already) */
+/* src/index.css or src/App.css */
+@font-face {
+    font-family: 'Clash Display';
+    src: url('/fonts/ClashDisplay-Variable.ttf') format('truetype'); /* Path to your variable font */
+    font-weight: 100 900; /* This tells the browser that the font has a weight axis ranging from 100 to 900 */
+    font-style: normal;
+  }
+  
+
+/* Apply the font globally using the @layer directive */
+@layer base {
+  body {
+    font-family: 'Clash Display', sans-serif;  /* Apply Clash Display font globally */
+  }
+}
