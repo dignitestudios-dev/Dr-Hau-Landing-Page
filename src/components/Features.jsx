@@ -37,7 +37,7 @@ const Features = () => {
               <div 
                 className={`flex justify-between items-center pt-4 cursor-pointer 
                   ${activeIndex === index ? "text-black font-bold" : "text-gray-500"} 
-                  ${activeIndex === null ? "border-b border-gray-200 mb-2" : "mb-4"}`}
+                  ${activeIndex === null ? "mb-2" : "mb-4"}`}
                 onClick={() => toggleDropdown(index)}
               >
                 <div className="flex items-center space-x-1">
@@ -48,7 +48,7 @@ const Features = () => {
                   {activeIndex === index ? (
                     <FiChevronUp className="text-black" />
                   ) : (
-                    <FiChevronDown className="text-black  " />
+                    <FiChevronDown className="text-black" />
                   )}
                 </div>
               </div>
@@ -57,6 +57,11 @@ const Features = () => {
                 <div className="pl-2 text-gray-600 text-left">
                   {feature.description}
                 </div>
+              )}
+
+              {/* Conditionally add the line (remove when dropdown is opened) */}
+              {activeIndex !== index && (
+                <div className="mt-4 border-t border-gray-300"></div>
               )}
             </div>
           ))}

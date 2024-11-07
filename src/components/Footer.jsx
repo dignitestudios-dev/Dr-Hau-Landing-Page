@@ -5,7 +5,7 @@ import { footerbg,appstore,playstore } from "../assets/export.js"; // Make sure 
 
 const Footer = () => {
   return (
-    <footer className="text-white relative mt-8">
+    <footer className="text-white relative mt-24">
       <div className="relative z-10 lg:-mb-20">
         <div className="container mx-auto text-center">
           <div 
@@ -48,13 +48,13 @@ const Footer = () => {
           <div className="my-5 md:my-0 flex flex-col items-center lg:ml-36 text-black">
             <h3 className="font-medium mb-3 lg:text-[24px] mt-4">Find us on Social Media</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-lg hover:text-teal-400 border border-black rounded-full p-3">
+              <a href="#" className="text-lg hover:text-[#D0FCB3] border border-black rounded-full p-3">
                 <FaFacebookF />
               </a>
-              <a href="#" className="text-lg hover:text-teal-400 border border-black rounded-full p-3">
+              <a href="#" className="text-lg hover:text-[#D0FCB3] border border-black rounded-full p-3">
                 <FaTwitter />
               </a>
-              <a href="#" className="text-lg hover:text-teal-400 border border-black rounded-full p-3">
+              <a href="#" className="text-lg hover:text-[#D0FCB3] border border-black rounded-full p-3">
                 <FaLinkedinIn />
               </a>
             </div>
@@ -73,13 +73,13 @@ const Footer = () => {
             </p>
 
             <div className="flex space-x-3 md:order-2 order-1 text-black">
-              <a href="#" className="hover:text-teal-400">Terms of Services</a>
+              <a href="#" className="hover:text-[#D0FCB3]">Terms of Services</a>
               <span> | </span>
-              <a href="#" className="hover:text-teal-400">Privacy Policy</a>
+              <a href="#" className="hover:text-[#D0FCB3]">Privacy Policy</a>
               <span> | </span>
-              <a href="#" className="hover:text-teal-400">FAQs</a>
+              <a href="#" className="hover:text-[#D0FCB3]">FAQs</a>
               <span> | </span>
-              <a href="/contact-us" className="hover:text-teal-400">Contact Us</a>
+              <a href="/contact-us" className="hover:text-[#D0FCB3]">Contact Us</a>
             </div>
           </div>
         </div>

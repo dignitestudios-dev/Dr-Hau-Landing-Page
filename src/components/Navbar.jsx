@@ -17,26 +17,26 @@ const Navbar = () => {
   };
 
   return (
-    <div className="relative bg-transparent text-white flex flex-col items-center pt-2">
+    <div className="relative bg-transparent text-white flex flex-col items-center pt-4">
       <nav className="flex items-center justify-between w-full px-4 md:px-10 lg:px-36 text-sm">
         {/* Logo */}
-        <div className="flex items-center mb-2 md:mb-0 pb-1">
+        <div className="flex items-center mb-2 md:mb-0 pb-4">
           <img src={logo} alt="Logo" className="h-8 md:h-12" />
         </div>
 
         {/* Desktop Menu (Hidden on small screens) */}
-        <div className="hidden md:flex flex-1 justify-center mb-2">
+        <div className="hidden md:flex flex-1 justify-center mb-4">
           <ul className="flex space-x-12 text-black">
             <li className="hover:underline hover:decoration-green-500 hover:decoration-2 cursor-pointer" onClick={() => scrollToSection('home')}>Home</li>
-            <li className="hover:underline cursor-pointer" onClick={() => scrollToSection('features')}>Features</li>
-            <li className="hover:underline cursor-pointer" onClick={() => scrollToSection('aboutus')}>About Us</li>
-            <li className="hover:underline cursor-pointer" onClick={() => scrollToSection('contactus')}>Contact Us</li>
+            <li className="hover:underline hover:decoration-green-500 hover:decoration-2 cursor-pointer" onClick={() => scrollToSection('features')}>Features</li>
+            <li className="hover:underline hover:decoration-green-500 hover:decoration-2 cursor-pointer" onClick={() => scrollToSection('aboutus')}>About Us</li>
+            <li className="hover:underline hover:decoration-green-500 hover:decoration-2 cursor-pointer" onClick={() => scrollToSection('contactus')}>Contact Us</li>
           </ul>
         </div>
 
         {/* Desktop Get The App Button */}
-        <div className="hidden md:flex mb-2">
-          <button className="bg-[#D0FCB3] text-black px-5 py-2 rounded-full font-medium hover:bg-gray-200 w-[163px] h-[40px]">
+        <div className="hidden md:flex mb-4">
+          <button className="bg-[#D0FCB3] text-black px-5 py-2 rounded-full font-medium hover:bg-[#D0FCB3] w-[163px] h-[40px] ">
             Get The App
           </button>
         </div>
