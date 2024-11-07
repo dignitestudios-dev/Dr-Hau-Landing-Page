@@ -43,7 +43,7 @@ const Navbar = () => {
 
         {/* Hamburger Icon (Visible on small screens) */}
         <button
-          className="md:hidden flex items-center justify-end focus:outline-none"
+          className="md:hidden flex items-center justify-end focus:outline-none mb-4"
           onClick={toggleMenu}
         >
           <svg
