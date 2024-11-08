@@ -73,13 +73,13 @@ const Footer = () => {
             </p>
 
             <div className="flex space-x-3 md:order-2 order-1 text-black">
-              <a href="#" className="hover:text-[#D0FCB3]">Terms of Services</a>
+              <a href="/termsandconditions" className="hover:text-[#D0FCB3]">Terms of Services</a>
               <span> | </span>
-              <a href="#" className="hover:text-[#D0FCB3]">Privacy Policy</a>
+              <a href="/privacypolicy" className="hover:text-[#D0FCB3]">Privacy Policy</a>
               <span> | </span>
-              <a href="#" className="hover:text-[#D0FCB3]">FAQs</a>
-              <span> | </span>
-              <a href="/contact-us" className="hover:text-[#D0FCB3]">Contact Us</a>
+              <a href="#" className="hover:text-[#D0FCB3]">Cookie Policy</a>
+              {/* <span> | </span>
+              <a href="/contact-us" className="hover:text-[#D0FCB3]">Contact Us</a> */}
             </div>
           </div>
         </div>

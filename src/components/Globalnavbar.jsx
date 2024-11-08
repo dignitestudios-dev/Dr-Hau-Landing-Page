@@ -53,7 +53,7 @@ const Globalnavbar = () => {
             </li>
             <li
               className="hover:underline hover:decoration-green-500 hover:decoration-2 cursor-pointer"
-              onClick={() => handleScrollToSection('about')}
+              onClick={() => handleScrollToSection('aboutus')}
             >
               About Us
             </li>
