@@ -18,7 +18,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row justify-center items-center px-4 py-10 mb-8 text-center lg:text-left">
+    <div className="flex flex-col lg:flex-row justify-center items-center px-4 py-10 mb-8 text-center lg:text-left" id='features'>
       <div className="relative overflow-hidden mb-8 lg:mb-0 lg:w-1/2 flex justify-center items-center">
         <div className="absolute bg-[#E0FFE5] rounded-full h-[300px] w-[300px] opacity-30 transform -translate-x-20 -translate-y-20"></div>
         <img 
@@ -28,7 +28,7 @@ const Features = () => {
         />
       </div>
 
-      <div className="lg:w-1/2 lg:ml-10 flex flex-col items-center lg:items-start w-full sm:w-[320px] md:w-[400px] lg:w-[500px]" id="features">
+      <div className="lg:w-1/2 lg:ml-10 flex flex-col items-center lg:items-start w-full sm:w-[320px] md:w-[400px] lg:w-[500px]">
         <h2 className="text-xl sm:text-3xl lg:text-[50px] font-bold mb-4">Key Features</h2>
         
         <div className="mt-6 space-y-3 max-w-xl w-full">
@@ -59,7 +59,6 @@ const Features = () => {
                 </div>
               )}
 
-              {/* Conditionally add the line (remove when dropdown is opened) */}
               {activeIndex !== index && (
                 <div className="mt-4 border-t border-gray-300"></div>
               )}

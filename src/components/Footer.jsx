@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-col items-center md:items-end text-black">
-            <p className="lg:text-[20px]">We’re always happy to help.</p>
+            <p className="lg:text-[20px] font-semibold">We’re always happy to help.</p>
             <p className="mt-2 text-[14px] font-light">info@bennyhau.com</p>
           </div>
         </div>
