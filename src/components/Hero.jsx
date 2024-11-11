@@ -23,10 +23,7 @@ const Hero = () => {
           Streamlining Healthcare for Vocational School Students
         </h2>
         <p className="text-[12px] sm:text-[14px] md:text-[14px] font-extralight pl-8">
-          Dr. Hau is a mobile application designed to make healthcare management easier for
-          vocational school students. By bridging the gap between students and healthcare providers, 
-          Dr. Hau empowers users to take control of their health journey,from vaccination records to appointment scheduling,
-          all in one convenient app.
+        Dr. Hau’s Clinic mobile application is designed to help you get your health records quickly and efficiently. By bridging the gap between students and healthcare providers, Dr. Hau empowers users to take control of their health journey, from vaccination records to appointment scheduling, all in one convenient app.
         </p>
       </div>
 
