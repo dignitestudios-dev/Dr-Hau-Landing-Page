@@ -37,7 +37,7 @@ const Globalnavbar = () => {
           <img src={logo} alt="Logo" className="h-8 md:h-16" />
         </div>
 
-        <div className="hidden md:flex flex-1 justify-center mb-4">
+        <div className="font-inter hidden md:flex flex-1 justify-center mb-4">
           <ul className="flex space-x-12 text-black">
             <li
               className="hover:underline hover:decoration-green-500 hover:decoration-2 cursor-pointer"
@@ -66,7 +66,7 @@ const Globalnavbar = () => {
           </ul>
         </div>
 
-        <div className="hidden md:flex mb-4">
+        <div className="font-inter hidden md:flex mb-4">
           <button className="bg-[#D0FCB3] text-black px-5 py-2 rounded-full font-medium hover:bg-[#D0FCB3] w-[163px] h-[40px]">
             Get The App
           </button>

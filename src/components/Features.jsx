@@ -29,7 +29,7 @@ const Features = () => {
       </div>
 
       <div className="lg:w-1/2 lg:ml-10 flex flex-col items-center lg:items-start w-full sm:w-[320px] md:w-[400px] lg:w-[500px]">
-        <h2 className="text-xl sm:text-3xl lg:text-[50px] font-bold mb-4">Key Features</h2>
+        <h2 className="text-xl sm:text-3xl lg:text-[50px] font-semibold mb-4">Key Features</h2>
         
         <div className="mt-6 space-y-3 max-w-xl w-full">
           {features.map((feature, index) => (
@@ -41,8 +41,8 @@ const Features = () => {
                 onClick={() => toggleDropdown(index)}
               >
                 <div className="flex items-center space-x-1">
-                  <span className="text-xl font-normal">{`0${index + 1} /`}</span>
-                  <span className='font-medium'>{feature.title}</span>
+                  <span className="font-inter text-xl font-normal">{`0${index + 1} /`}</span>
+                  <span className='font-inter font-medium md:text-[25px]'>{feature.title}</span>
                 </div>
                 <div className="flex items-center justify-center w-5 h-5 rounded-full border-2 border-black">
                   {activeIndex === index ? (
@@ -54,7 +54,7 @@ const Features = () => {
               </div>
 
               {activeIndex === index && (
-                <div className="pl-2 text-gray-600 text-left">
+                <div className="font-inter font-medium pl-2 text-gray-600 text-left">
                   {feature.description}
                 </div>
               )}

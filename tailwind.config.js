@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         'clash': ['Clash Display', 'sans-serif'], 
+        'inter': ['Inter', 'sans-serif'],         // Adding Inter font
       },
     },
   },

@@ -1,4 +1,7 @@
 import React from 'react';
+import '@fontsource/inter/400.css';  // Regular weight
+import '@fontsource/inter/500.css';  // Medium weight
+import '@fontsource/inter/600.css';  // Semi-bold weight
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Privacypolicy from './components/Privacypolicy';
 import Termsandconditions from './components/Termsandconditions';
