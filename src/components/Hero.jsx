@@ -1,12 +1,12 @@
 import React from 'react'; 
 import { heroimage } from '../assets/export';
-import { herobg } from '../assets/export'; // assuming herobg is the path of your background image
+import { herobg } from '../assets/export'; 
 
 const Hero = () => {
   return (
     <div
-      className="flex flex-col md:flex-row items-center w-full bg-cover bg-center bg-black"
-      // style={{ backgroundImage: `url(${herobg})` }}
+      className="flex flex-col md:flex-row items-center w-full bg-cover bg-center "
+      style={{ backgroundImage: `url(${herobg})`}}
       id="home"
     >
       <div className="text-white p-8 md:p-16 w-full md:w-1/2 ">

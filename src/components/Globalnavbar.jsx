@@ -34,7 +34,7 @@ const Globalnavbar = () => {
     <div className="relative bg-transparent text-white flex flex-col items-center pt-4">
       <nav className="flex items-center justify-between w-full px-4 md:px-10 lg:px-36 text-sm">
         <div className="flex items-center mb-2 md:mb-0 pb-4">
-          <img src={logo} alt="Logo" className="h-8 md:h-12" />
+          <img src={logo} alt="Logo" className="h-8 md:h-18" />
         </div>
 
         <div className="hidden md:flex flex-1 justify-center mb-4">

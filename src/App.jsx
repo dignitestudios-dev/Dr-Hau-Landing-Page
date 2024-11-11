@@ -19,15 +19,15 @@ function App() {
         path="/"
         element={
           <>
-            <Navbar /> {/* Use default navbar on homepage */}
+            <Navbar /> 
             <section id="home">
               <Hero />
             </section>
-            <section id="aboutus">
-              <About />
-            </section>
             <section id="features">
             <Features />
+            </section>
+            <section id="aboutus">
+              <About />
             </section>
             <section id="contactus">
               <Contact />
