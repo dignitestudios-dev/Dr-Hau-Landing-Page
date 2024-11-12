@@ -3,18 +3,26 @@ import { feature } from "../assets/export.js";
 import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
 
 const Features = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndices, setActiveIndices] = useState([]);
 
+  // Toggle feature open/close
   const toggleDropdown = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
+    setActiveIndices((prevIndices) => {
+      if (prevIndices.includes(index)) {
+        // If index is already open, close it by removing it from the array
+        return prevIndices.filter(i => i !== index);
+      } else {
+        // Otherwise, open it by adding the index to the array
+        return [...prevIndices, index];
+      }
+    });
   };
 
   const features = [
     { title: "Profile Creation", description: "Easily manage your personal and medical information for accurate healthcare records." },
-    { title: "Personal Medical Records", description: "Keep track of all your medical records in one place." },
-    { title: "Seamless Appointment Booking", description: "Schedule appointments with ease." },
-    { title: "Digital Consent Forms", description: "Access and sign consent forms digitally." },
-    { title: "Vaccination Information Sheets", description: "Store and access your vaccination information." }
+    { title: "Personal Medical Records", description: "View a complete overview of your vaccination and procedure history." },
+    { title: "Digital Consent Forms", description: "Securely sign and submit consent for vaccinations and procedures." },
+    { title: "Vaccination Information Sheets", description: "Access comprehensive details on vaccines to make informed decisions." }
   ];
 
   return (
@@ -36,8 +44,8 @@ const Features = () => {
             <div key={index} className="w-full"> 
               <div 
                 className={`flex justify-between items-center pt-4 cursor-pointer 
-                  ${activeIndex === index ? "text-black font-bold" : "text-gray-500"} 
-                  ${activeIndex === null ? "mb-2" : "mb-4"}`}
+                  ${activeIndices.includes(index) ? "text-black font-bold" : "text-gray-500"} 
+                  ${activeIndices.length === 0 ? "mb-2" : "mb-4"}`}
                 onClick={() => toggleDropdown(index)}
               >
                 <div className="flex items-center space-x-1">
@@ -45,7 +53,7 @@ const Features = () => {
                   <span className='font-inter font-medium md:text-[25px]'>{feature.title}</span>
                 </div>
                 <div className="flex items-center justify-center w-5 h-5 rounded-full border-2 border-black">
-                  {activeIndex === index ? (
+                  {activeIndices.includes(index) ? (
                     <FiChevronUp className="text-black" />
                   ) : (
                     <FiChevronDown className="text-black" />
@@ -53,13 +61,13 @@ const Features = () => {
                 </div>
               </div>
 
-              {activeIndex === index && (
+              {activeIndices.includes(index) && (
                 <div className="font-inter font-medium pl-2 text-gray-600 text-left">
                   {feature.description}
                 </div>
               )}
 
-              {activeIndex !== index && (
+              {!activeIndices.includes(index) && (
                 <div className="mt-4 border-t border-gray-300"></div>
               )}
             </div>
