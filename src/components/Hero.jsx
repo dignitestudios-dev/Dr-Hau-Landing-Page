@@ -19,7 +19,7 @@ const Hero = () => {
 </p>
 
 
-        <h2 className="font-inter text-[20px] sm:text-[22px] md:text-[24px] mb-2 pl-8">
+        <h2 className="font-inter text-[20px] sm:text-[22px] md:text-[22px] mb-2 pl-8">
           Streamlining Healthcare for Vocational School Students
         </h2>
         <p className="font-inter font-medium text-[12px] sm:text-[14px] md:text-[16px] pl-8 text-[#8D8D8D]">
