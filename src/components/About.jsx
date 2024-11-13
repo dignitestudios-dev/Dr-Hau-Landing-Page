@@ -20,11 +20,12 @@ const About = () => {
       </div>
 
       <div className="relative overflow-hidden mb-8 lg:mb-0 lg:ml-0 lg:mr-24">
-        <img 
-          src={about} 
-          alt="Phone"
-          className="w-full h-full"
-        />
+      <img 
+      src={about} 
+      alt="Phone"
+      className="object-contain w-full h-full"
+      
+    />
       </div>
       
     </div>

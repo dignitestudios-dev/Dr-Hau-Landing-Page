@@ -32,7 +32,7 @@ const Features = () => {
         <img 
           src={feature} 
           alt="Phone" 
-          className="w-full h-full relative z-10"
+          className="w-full h-full relative z-10 object-contain"
         />
       </div>
 
