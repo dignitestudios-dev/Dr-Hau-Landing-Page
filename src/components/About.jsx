@@ -19,11 +19,11 @@ const About = () => {
 
       </div>
 
-      <div className="relative overflow-hidden mb-8 lg:mb-0 lg:ml-0 lg:mr-24">
+      <div className="relative w-1/3 overflow-hidden mb-8 lg:mb-0 lg:ml-0 lg:mr-24">
       <img 
       src={about} 
       alt="Phone"
-      className="object-contain w-full h-full"
+      className="w-full h-auto"
       
     />
       </div>
